@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cupcake's Store - Checkout</title>
+</head>
+
+<body>
+    <header>
+        <button onclick="window.history.back()">Voltar</button>
+    </header>
+    <main>
+        <h2>Checkout</h2>
+        <p>Total: R$ <span id="checkout-total">0.00</span></p>
+        <select id="payment-method">
+            <option value="money">Dinheiro</option>
+            <option value="debit">Débito</option>
+            <option value="credit">Crédito</option>
+        </select>
+        <button onclick="completePurchase()">Efetuar Pagamento</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

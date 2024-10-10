@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cupcake's Store - Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button onclick="login()">Ok</button>
+        <button onclick="showRegister()">Cadastro</button>
+    </div>
+
+    <div id="register" style="display:none;">
+        <h2>Cadastro</h2>
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="email" id="reg_email" placeholder="Email" required>
+        <input type="password" id="reg_password" placeholder="Senha" required>
+        <input type="password" id="confirm_password" placeholder="Confirmação de Senha" required>
+        <button onclick="register()">Ok</button>
+        <button onclick="hideRegister()">Voltar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

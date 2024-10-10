@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cupcake's Store - Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button onclick="window.location.href='profile.html'">Perfil</button>
+            <button onclick="window.location.href='cart.html'">Carrinho</button>
+            <button onclick="window.location.href='orders.html'">Pedidos</button>
+            <button onclick="logout()">Sair</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-list">
+            <!-- Exemplos de produtos -->
+            <div class="product">
+                <img src="cupcake1.jpg" alt="Cupcake 1">
+                <h3>Cupcake de Chocolate</h3>
+                <p>R$ 5,00</p>
+                <button onclick="addToCart('Cupcake de Chocolate', 5)">+ Carrinho</button>
+            </div>
+            <!-- Adicione mais produtos aqui -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
